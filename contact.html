@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا — محارف</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="page-wrap">
+  <section class="section">
+    <div class="container-wide">
+      <span class="eyebrow">تواصل معنا</span>
+      <h1 class="page-title animate-fade-in-up" style="font-family:var(--font-display); font-weight:900; color:var(--text-primary); line-height:var(--leading-tight); margin-bottom:4rem; text-wrap:balance;">
+        نسعد بسماعك.
+      </h1>
+      <div class="two-col" style="align-items:start;">
+        <div>
+          <p style="font-size:var(--text-lg); color:var(--text-secondary); line-height:var(--leading-relaxed); margin-bottom:3rem; text-wrap:pretty; max-width:32rem;">
+            للأسئلة، الشراكات، فرص التعاون، أو الاستفسارات المتعلقة بالورش والعضوية والأرشيف.
+          </p>
+          <div>
+            <p style="font-size:var(--text-sm); color:var(--text-muted); margin-bottom:0.5rem; letter-spacing:0.06em;">البريد الإلكتروني</p>
+            <a href="mailto:info@maharef.org" style="font-size:var(--text-xl); color:var(--text-primary); text-decoration:none; transition:color 300ms;" onmouseover="this.style.color='var(--color-brown)'" onmouseout="this.style.color='var(--text-primary)'">
+              info@maharef.org
+            </a>
+          </div>
+        </div>
+        <div style="max-width:36rem; width:100%;">
+          <form id="contact-form" class="form-group">
+            <div>
+              <label class="form-label" for="c-name">الاسم</label>
+              <input id="c-name" name="name" type="text" class="form-input" placeholder="اسمك الكامل" required>
+            </div>
+            <div>
+              <label class="form-label" for="c-email">البريد الإلكتروني</label>
+              <input id="c-email" name="email" type="email" class="form-input" placeholder="email@example.com" required>
+            </div>
+            <div>
+              <label class="form-label" for="c-subject">الموضوع</label>
+              <input id="c-subject" name="subject" type="text" class="form-input" placeholder="موضوع رسالتك">
+            </div>
+            <div>
+              <label class="form-label" for="c-message">الرسالة</label>
+              <textarea id="c-message" name="message" class="form-textarea" rows="5" placeholder="رسالتك..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="align-self:flex-start;">أرسل رسالة</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/nav.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>
