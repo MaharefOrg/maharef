@@ -83,10 +83,10 @@
   const footerHTML = `
 <footer id="site-footer">
   <div class="container-full">
-    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:3rem; margin-bottom:4rem; padding-bottom:4rem; border-bottom:1px solid rgba(216,204,187,0.12);">
+    <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:3rem; margin-bottom:4rem; padding-bottom:4rem; border-bottom:1px solid rgba(255,255,255,0.15);">
       <div style="max-width:26rem;">
         <img src="assets/images/logo.png" alt="محارف" style="height:2.75rem; width:auto; filter:invert(1); mix-blend-mode:screen; margin-bottom:1.25rem;">
-        <p style="color:rgba(248,245,239,0.45); line-height:var(--leading-relaxed); text-wrap:pretty;">
+        <p style="color:rgba(255,255,255,0.45); line-height:var(--leading-relaxed); text-wrap:pretty;">
           الحرف العربي ليس شكلًا واحدًا، بل منظومة من الاحتمالات.
         </p>
       </div>
@@ -109,8 +109,8 @@
       </div>
     </div>
     <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-      <p style="font-size:var(--text-sm); color:rgba(248,245,239,0.25);">© محارف</p>
-      <a href="mailto:info@maharef.org" style="font-size:var(--text-sm); color:rgba(248,245,239,0.25); text-decoration:none; transition:color 300ms;" onmouseover="this.style.color='#F8F5EF'" onmouseout="this.style.color='rgba(248,245,239,0.25)'">info@maharef.org</a>
+      <p style="font-size:var(--text-sm); color:rgba(255,255,255,0.25);">© 2026 Maharef. All rights reserved.</p>
+      <a href="mailto:info@maharef.org" style="font-size:var(--text-sm); color:rgba(255,255,255,0.25); text-decoration:none; transition:color 300ms;" onmouseover="this.style.color='#FFFFFF'" onmouseout="this.style.color='rgba(255,255,255,0.25)'">info@maharef.org</a>
     </div>
   </div>
 </footer>`;
