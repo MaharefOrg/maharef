@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المستجدات — محارف</title>
+  <meta name="description" content="آخر أخبار محارف: الورش والبرامج والأرشيف والمجلة.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .update-list { display: flex; flex-direction: column; }
+    .update-item {
+      display: grid;
+      grid-template-columns: 11rem 1fr;
+      gap: 2.5rem;
+      padding: 3rem 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .update-item:last-child { border-bottom: 1px solid var(--border-subtle); }
+    .update-meta { display: flex; flex-direction: column; gap: 0.875rem; align-items: flex-start; }
+    .update-date { font-size: var(--text-sm); color: var(--text-muted); }
+    .update-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      color: var(--text-primary);
+      line-height: var(--leading-tight);
+      margin-bottom: 1rem;
+      text-wrap: balance;
+    }
+    .update-text {
+      font-size: var(--text-lg);
+      color: var(--text-secondary);
+      line-height: var(--leading-relaxed);
+      max-width: 44rem;
+      margin-bottom: 1.5rem;
+      text-wrap: pretty;
+    }
+    @media (max-width: 700px) {
+      .update-item { grid-template-columns: 1fr; gap: 1.25rem; padding: 2.5rem 0; }
+      .update-meta { flex-direction: row; align-items: center; flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+<main class="page-wrap">
+  <section class="section">
+    <div class="container-wide">
+      <span class="eyebrow">المستجدات</span>
+      <h1 class="page-title animate-fade-in-up" style="font-family:var(--font-display); font-weight:900; color:var(--text-primary); line-height:var(--leading-tight); margin-bottom:2rem; text-wrap:balance;">آخر أخبار محارف</h1>
+      <p style="font-size:var(--text-xl); color:var(--text-secondary); line-height:var(--leading-relaxed); max-width:44rem; margin-bottom:5rem; text-wrap:pretty;">
+        ما يجري الآن في محارف: الورش والبرامج، ومشاريع الأرشيف، والمجلة، وكل جديد يخص الحرف العربي والثقافة البصرية.
+      </p>
+
+      <div class="update-list">
+
+        <!--
+          ── لإضافة خبر جديد ──
+          انسخ كتلة <article> كاملة (من <article> إلى </article>)،
+          والصقها هنا في الأعلى حتى يظهر الخبر الأحدث أولاً،
+          ثم غيّر التصنيف والتاريخ والعنوان والنص والرابط.
+        -->
+
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="badge badge-muted">ورشة</span>
+            <span class="update-date">البرنامج الحالي</span>
+          </div>
+          <div>
+            <h2 class="update-title">ورشة تصميم الشعارات العربية: مكتمل العدد</h2>
+            <p class="update-text">
+              اكتمل التسجيل في الورشة التي تدرس الحرف العربي بوصفه نظاماً بصرياً معاصراً، من خلال تحليل الإرث البصري العراقي وتطوير شعارات وهويات قائمة على البحث والتجريب. شهر كامل، ثمانية أيام تدريبية، كل جمعة وسبت.
+            </p>
+            <a href="workshop.html" class="btn-outline-sm">عرض تفاصيل الورشة</a>
+          </div>
+        </article>
+
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="badge badge-muted">الأرشيف</span>
+            <span class="update-date">إطلاق فبراير ٢٠٢٧</span>
+          </div>
+          <div>
+            <h2 class="update-title">أرشيف الحروف العربية في العراق</h2>
+            <p class="update-text">
+              نعمل على مشروع بحثي وأرشيفي لدراسة وتوثيق الحروف والخطوط والشعارات والمطبوعات التي شكّلت الثقافة البصرية العراقية، ويُطلق في فبراير ٢٠٢٧.
+            </p>
+            <a href="archive.html" class="btn-outline-sm">اكتشف المشروع</a>
+          </div>
+        </article>
+
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="badge badge-muted">المجلة</span>
+            <span class="update-date">قريباً</span>
+          </div>
+          <div>
+            <h2 class="update-title">العدد الأول من مجلة محارف قيد الإعداد</h2>
+            <p class="update-text">
+              مقالات وحوارات وتأملات حول الحرف والهوية والثقافة البصرية، بأصوات من الفن والتصميم والبحث والنشر والأرشفة.
+            </p>
+            <a href="magazine.html" class="btn-outline-sm">عن المجلة</a>
+          </div>
+        </article>
+
+        <article class="update-item">
+          <div class="update-meta">
+            <span class="badge badge-muted">العضوية</span>
+            <span class="update-date">مفتوحة الآن</span>
+          </div>
+          <div>
+            <h2 class="update-title">عضوية محارف السنوية المجانية</h2>
+            <p class="update-text">
+              العضوية مفتوحة للممارسين والباحثين والمهتمين بالحرف والثقافة البصرية.
+            </p>
+            <a href="membership.html" class="btn-outline-sm">اعرف المزيد</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+<script src="js/nav.js"></script>
+</body>
+</html>

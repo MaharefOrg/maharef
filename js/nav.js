@@ -38,6 +38,7 @@
         ${navLink('programs.html',   'البرامج')}
         ${navLink('archive.html',    'الأرشيف')}
         ${navLink('magazine.html',   'المجلة')}
+        ${navLink('updates.html',    'المستجدات')}
         ${navLink('membership.html', 'العضوية')}
         ${navLink('contact.html',    'تواصل')}
       </div>
@@ -57,6 +58,7 @@
   ${mobileLink('programs.html',   'البرامج')}
   ${mobileLink('archive.html',    'الأرشيف')}
   ${mobileLink('magazine.html',   'المجلة')}
+  ${mobileLink('updates.html',    'المستجدات')}
   ${mobileLink('membership.html', 'العضوية')}
   ${mobileLink('supporters.html', 'الداعمون')}
   ${mobileLink('support.html',    'ادعم محارف')}
@@ -95,6 +97,7 @@
           <a href="index.html"      class="footer-link">الرئيسية</a>
           <a href="about.html"      class="footer-link">عن محارف</a>
           <a href="programs.html"   class="footer-link">البرامج</a>
+          <a href="updates.html"    class="footer-link">المستجدات</a>
         </div>
         <div style="display:flex; flex-direction:column; gap:0.875rem;">
           <a href="archive.html"    class="footer-link">الأرشيف</a>
