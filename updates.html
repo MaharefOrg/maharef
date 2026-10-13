@@ -35,17 +35,27 @@
       margin-bottom: 1.5rem;
       text-wrap: pretty;
     }
+    .update-media {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 18rem;
+      gap: 3rem;
+      align-items: start;
+    }
+    .update-media .update-text { margin-bottom: 1.5rem; }
     .update-video {
       position: relative;
       aspect-ratio: 9 / 16;
-      width: min(100%, 22rem);
-      margin-bottom: 1.5rem;
+      width: 100%;
       border-radius: var(--radius-3xl);
       overflow: hidden;
       background: var(--bg-card);
       border: 1px solid var(--border-card);
     }
     .update-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    @media (max-width: 900px) {
+      .update-media { grid-template-columns: 1fr; gap: 1.5rem; }
+      .update-video { width: min(100%, 22rem); }
+    }
     @media (max-width: 700px) {
       .update-item { grid-template-columns: 1fr; gap: 1.25rem; padding: 2.5rem 0; }
       .update-meta { flex-direction: row; align-items: center; flex-wrap: wrap; }
@@ -76,15 +86,17 @@
             <span class="badge badge-muted">ورشة</span>
             <span class="update-date">الأحدث</span>
           </div>
-          <div>
+          <div class="update-media">
+            <div>
             <h2 class="update-title">اختتام ورشة تصميم الشعارات العربية</h2>
             <p class="update-text">
               اختُتمت ورشة تصميم الشعارات العربية بعد شهر من العمل والبحث والتجريب، ولاقت تفاعلاً واسعاً من المشاركين والمتابعين. درس المشاركون الحرف العربي بوصفه نظاماً بصرياً معاصراً، وانطلقوا من الإرث البصري العراقي لتطوير شعارات وهويات جديدة. شاهدوا نتائج أعمالهم في الفيديو.
             </p>
+            <a href="workshop.html" class="btn-outline-sm">عن الورشة</a>
+            </div>
             <div class="update-video">
               <iframe src="https://player.vimeo.com/video/1235625616?badge=0&amp;autopause=0&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" title="نتائج ورشة تصميم الشعارات العربية" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
-            <a href="workshop.html" class="btn-outline-sm">عن الورشة</a>
           </div>
         </article>
 
